@@ -1,0 +1,33 @@
+# /etc/conf.d/vektorcoind: config file for /etc/init.d/vektorcoind
+
+# Config file location
+#VEKTORCOIND_CONFIGFILE="/etc/vektorcoin/vektorcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $VEKTORCOIND_USER)
+#VEKTORCOIND_PIDDIR="/var/run/vektorcoind"
+
+# What filename to give the pidfile
+#VEKTORCOIND_PIDFILE="${VEKTORCOIND_PIDDIR}/vektorcoind.pid"
+
+# Where to write vektorcoind data (be mindful that the blockchain is large)
+#VEKTORCOIND_DATADIR="/var/lib/vektorcoind"
+
+# User and group to own vektorcoind process
+#VEKTORCOIND_USER="vektorcoin"
+#VEKTORCOIND_GROUP="vektorcoin"
+
+# Path to vektorcoind executable
+#VEKTORCOIND_BIN="/usr/bin/vektorcoind"
+
+# Nice value to run vektorcoind under
+#VEKTORCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#VEKTORCOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for vektorcoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+VEKTORCOIND_SIGTERM_TIMEOUT=60
