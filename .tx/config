@@ -1,0 +1,7 @@
+[main]
+host = https://www.transifex.com
+
+[vektorcoin.qt-translation-017x]
+file_filter = src/qt/locale/vektorcoin_<lang>.ts
+source_file = src/qt/locale/vektorcoin_en.ts
+source_lang = en
